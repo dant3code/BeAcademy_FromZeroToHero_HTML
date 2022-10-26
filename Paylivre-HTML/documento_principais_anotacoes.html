@@ -1,0 +1,350 @@
+
+<!-- Para montar a estrutura do HTML basta digitar ! (exclamação) e press Enter
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Olá Mundo!!!!</title>
+    </head>
+    
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quam dolor vero officiis recusandae praesentium, incidunt unde voluptatibus 
+            provident pariatur doloribus facilis. Ad, voluptate. Expedita, fugit. 
+            Porro commodi eius dolorem expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quam dolor vero officiis recusandae praesentium, incidunt unde voluptatibus 
+                provident pariatur doloribus facilis. Ad, voluptate. Expedita, fugit. 
+                Porro commodi eius dolorem expedita?</p>
+    </body>
+    
+</html>
+
+
+
+<!-- HTML 
+>>> Hypertext Markup Language
+>>>
+>>> HT = hypertext: hiper texto
+>>> M = makup: marcação
+>>> L = language: linguagem-->
+
+
+<!-- Atributo-->
+<h1>Olá Mundo!</h1>
+
+
+<!-- Elementos Vazios-->
+<input type="text">
+<img src="imagem.png" alt="texto">
+
+<!--
+    Atributos Globais mais utilizados
+
+    - class: classe
+    - contentetitable: pode editar texto
+    - data-*: dados
+    - hidden: esconder tag
+    - id: identificador
+    - style: muda a cor
+    - tabindex: segue conforme press tecla TAB
+    - title: definir um titulo
+-->
+
+
+<div class="carrinho" contenteditable="true" tabindex="1">
+    conteudo
+</div> 
+
+<div class="carrinho" data-qualquernomeaqui="" id="cart2" style="color:brown" tabindex="4">
+    conteudo
+</div> 
+
+<div class="carrinho" tabindex="3">
+    conteudo
+</div> 
+
+<div class="carrinho" hidden tabindex="2">
+    conteudo
+</div>
+
+<div title="definir um titulo" tabindex="2">
+    conteudo
+</div>
+
+<!--
+    Alinhamento de tags
+    -   Fluxo
+    -   Hierarquia
+    -   Posicionamento dos elemetos
+-->
+
+<!-- A tag div serve para agrupar os elementos-->
+
+<div>
+    <p>Vou <em>escrever</em> um parágrafo</p>
+</div>
+<p>Esse é um novo <br> parágrafo</p>
+
+<!--
+    Vamos praticar!
+
+    Escrever 2 parágrafos, dando ênfase 
+    e importância para algumas palavras, 
+    e adiciona um link de saiba mais.
+
+    - use a tag em para ênfase
+    - use a tag strong para importância
+    - o link pode levar para o google.
+-->
+
+
+<p>Primeiro <em>parágrafo</em></p>
+<p>Segundo <strong>parágrafo</strong> </p>
+<a href="http://www.google.com.br"> Saiba mais</a>
+
+<!--
+    Conteúdo do texto e 
+    caracteres reservados
+
+    <: &lt 
+    >: &gt 
+    "": &quot
+    &: &amp
+    '': &apos 
+-->
+
+<p> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    os espaços
+    <br>
+    que colocamos
+    <br>
+    além das quebras de linha são ignorados
+</p>
+
+
+<!--Hyperlinks - Elementos Ancora: <a>-->
+<a href="http://google.com.br"> Google</a>
+
+<h1>
+    
+<p>Encontre-me:</p>
+</h1>
+
+<ul>
+    <li><a href="https://g1.com.br" target="_blank" >Website</a></a></li>
+    <li><a href="mailto:diegodante.pxg@hotmail.com"> Email </a></li>
+    <li><a href="tel:+5511952357100">Telefone</a></li>
+</ul>
+
+<!--Fragmento hiperlink-->
+<p> Saiba mais</p>
+    <ul>
+        <li> <a href="about">Sobre mim</a></li>
+        <li> <a href="history">Histório</a></li>
+        <li><a href="works">Trabalhos</a></li>
+    </ul>
+
+
+<h1>Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid explicabo reiciendis nisi, voluptatem rerum porro, suscipit quia laboriosam ducimus dolore ratione optio et sapiente error non, molestiae odit quibusdam.
+
+<h2>História</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione et modi a dolorum accusamus enim dolor! Veritatis non ea eveniet eos recusandae. Ducimus aut culpa quo veritatis? Illum, provident.
+
+<h2>Trabalhos</h2>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus aperiam consectetur, nisi laboriosam sequi possimus repellendus sapiente, unde dolorem optio cupiditate ullam cum earum corporis quas tempora ea obcaecati mollitia.
+
+<!--Conteudos dos hiperlinks
+
+    - qualquer conteúdo
+-->
+
+<a href="https://google.com" title="Ir para google">
+    <h1>Gloogle</h1>
+    <p>mais coisas que você pode colocar</p>
+    <img src="https://source.unsplash.com/ramdom" alt="">
+
+</a>
+
+<!--
+
+    <table>
+        Prós
+        -Visualização de dados via linhas e colunas
+        -Boa acessibilidade para leitura dos dados
+
+        Contras
+        -Pouco flexível
+        -Precisa de estilização para melhor visualização
+
+        Não usar
+        - Para criar seu layout
+-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<table>
+
+    <caption>Pessoas por idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Diego Dante</th>
+            <th>26</th>
+        </tr>
+        <tr>
+            <th>Gabriel José</th>
+            <th>22</th>
+        </tr>
+    </tbody>
+</table>
+<tfoot>
+    <td>Total:</td>
+    <td>2 Pessoas</td>
+</tfoot>
+
+<!--
+    2 lojas
+        Quantos produtos foram produzidos, 
+        quantos vendidos e agrupado por nome dos produto
+-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<table>
+    
+    <caption>Produzidos X Vendidos por Loja</caption>
+
+
+    <colgroup>
+        <col>
+        <col span= "2" style="background-color:red">
+        <col span= "2" style="background-color:blue">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup" >Afonso Pena</th>
+            <th colspan="2" scope="colgroup" >Antonia Pereira</th>
+        </tr>
+    
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--
+    <head>
+-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+
+<!--
+    <meta>
+
+    Atributos
+    -charset
+    -name
+    -content
+-->
+
+
+<head> </head>
+    <!-- codificação de carracteres especiais-->
+    <meta charset="UTF-8">
+
+    <!--compatibilidade para internet explorer-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- portabilidade para dispositivos mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        <link> para icones personalizados
+    -->
+
+    <!-- favicon básico -->
+    <link rel="icon" href="">
+
+
+    <!-- SEO: SEARCH ENGINE OPTIMIZATION (morore de busca = Google)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--define autor da página-->
+    <meta name="author" content="">
+
+    <!--aparece o que você quer mostrar na pesquisa do Google-->
+    <meta name="description" content="Um website para iniciantes em programação">
+
+    <!--dá uma instrução para o robo do google-->
+    <meta name="robots" content="noindex, nofollow">
+
+
+    <title>HOMEPAGE</title>
+
+</head>
+
+    <!--
+
+        <meta> redes socias
+        
+    -->
+    <head>
+        <!-- Open Graph: facebook-->
+        <meta property="og:image" content="https://sdfsdfsdfsd.com.brsdfsf">
+    </head>
